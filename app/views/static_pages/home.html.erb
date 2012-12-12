@@ -1,3 +1,32 @@
+ <% if user_signed_in? %>
+
+ <div class="row" style="padding-top:40px;">
+
+  <div class="span4">
+    <center><img src="/assets/journal.jpg" class="img-rounded" alt="">
+      <h4>New Journal Entry</h4>
+      <p></p>
+    </center>
+  </div><!-- span -->
+
+  <div class="span4">
+    <center><img src="/assets/photo_flyfishing.jpg" class="img-rounded" alt="">
+      <h4>Post a Photo</h4>
+      <p></p>
+    </center>
+  </div><!-- span -->
+
+  <div class="span4">
+    <center><img src="/assets/read_journal.jpg" class="img-rounded" alt="">
+      <h4>Browse/Search Journal</h4>
+      <p></p>
+    </center>
+  </div><!-- span -->
+
+</div><!-- row -->
+
+ <% else %>
+
 <div class="row">
 <div class="span12">
 <div id="myCarousel" class="carousel slide">
@@ -68,6 +97,8 @@
 
 
 <hr>
+
+<% end %>
 
 
 
