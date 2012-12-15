@@ -162,13 +162,13 @@ pre{display:block;padding:12.5px;margin:0 0 13px;font-size:17px;line-height:26px
 pre code{padding:0;color:inherit;background-color:transparent;border:0;}
 .pre-scrollable{max-height:340px;overflow-y:scroll;}
 form{margin:0 0 26px;}
-fieldset{padding:0;margin:0;border:0;}
+fieldset{padding:0;margin:0 0 20 0;border:0;}
 legend{display:block;width:100%;padding:0;margin-bottom:26px;font-size:27px;line-height:52px;color:#333333;border:0;border-bottom:1px solid #e5e5e5;}legend small{font-size:19.5px;color:#999999;}
 label,input,button,select,textarea{font-size:18px;font-weight:normal;line-height:26px;}
 input,button,select,textarea{font-family:"Lora",Georgia,"Times New Roman",Times,serif;}
 label{display:block;margin-bottom:5px;}
 select,textarea,input[type="text"],input[type="password"],input[type="datetime"],input[type="datetime-local"],input[type="date"],input[type="month"],input[type="time"],input[type="week"],input[type="number"],input[type="email"],input[type="url"],input[type="search"],input[type="tel"],input[type="color"],.uneditable-input{display:inline-block;height:26px;padding:4px 6px;margin-bottom:13px;font-size:18px;line-height:26px;color:#555555;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;vertical-align:middle;}
-input,textarea,.uneditable-input{width:206px;}
+input,textarea,.uneditable-input{width:400px;}
 textarea{height:auto;}
 textarea,input[type="text"],input[type="password"],input[type="datetime"],input[type="datetime-local"],input[type="date"],input[type="month"],input[type="time"],input[type="week"],input[type="number"],input[type="email"],input[type="url"],input[type="search"],input[type="tel"],input[type="color"],.uneditable-input{background-color:#ffffff;border:1px solid #cccccc;-webkit-box-shadow:inset 0 1px 1px rgba(0, 0, 0, 0.075);-moz-box-shadow:inset 0 1px 1px rgba(0, 0, 0, 0.075);box-shadow:inset 0 1px 1px rgba(0, 0, 0, 0.075);-webkit-transition:border linear .2s, box-shadow linear .2s;-moz-transition:border linear .2s, box-shadow linear .2s;-o-transition:border linear .2s, box-shadow linear .2s;transition:border linear .2s, box-shadow linear .2s;}textarea:focus,input[type="text"]:focus,input[type="password"]:focus,input[type="datetime"]:focus,input[type="datetime-local"]:focus,input[type="date"]:focus,input[type="month"]:focus,input[type="time"]:focus,input[type="week"]:focus,input[type="number"]:focus,input[type="email"]:focus,input[type="url"]:focus,input[type="search"]:focus,input[type="tel"]:focus,input[type="color"]:focus,.uneditable-input:focus{border-color:rgba(82, 168, 236, 0.8);outline:0;outline:thin dotted \9;-webkit-box-shadow:inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(82,168,236,.6);-moz-box-shadow:inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(82,168,236,.6);box-shadow:inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(82,168,236,.6);}
 input[type="radio"],input[type="checkbox"]{margin:4px 0 0;*margin-top:0;margin-top:1px \9;line-height:normal;cursor:pointer;}

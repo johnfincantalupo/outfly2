@@ -2,30 +2,30 @@
 
 <div class="row">
 
- <h2 style="padding-bottom:20px;"> Welcome fly-fisher! </h2>
+ <h2 style="padding-bottom:40px;"> Welcome fly-fisher! </h2>
 
-  <div class="span4">
+  <div class="span6">
     <center><img src="/assets/journal.jpg" class="img-rounded" alt="" style="padding-bottom:20px;">
       <p>
-  		<button class="btn" type="button">Add Journal Entry</button>
+      <%= link_to "New Journal Entry", new_journal_entry_path, class: "btn" %>
   	  </p>
       <p></p>
     </center>
   </div><!-- span -->
 
-  <div class="span4">
+  <!-- <div class="span4">
     <center><img src="/assets/photo_flyfishing.jpg" class="img-rounded" alt="" style="padding-bottom:20px;">
       <p>
   		<button class="btn" type="button">Add a Photo</button>
   	  </p>
       <p></p>
     </center>
-  </div><!-- span -->
+  </div> -->
 
-  <div class="span4">
+  <div class="span6">
     <center><img src="/assets/read_journal.jpg" class="img-rounded" alt="" style="padding-bottom:20px;">
       <p>
-  		<button class="btn" type="button">Browse Journal</button>
+  		<%= link_to "New Journal Entry", journal_entries_path, class: "btn" %>
   	  </p>
       <p></p>
     </center>

@@ -1,0 +1,65 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Date:</b>
+  <%= @journal_entry.date %>
+</p>
+
+<p>
+  <b>Loc city:</b>
+  <%= @journal_entry.loc_city %>
+</p>
+
+<p>
+  <b>Loc state:</b>
+  <%= @journal_entry.loc_state %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @journal_entry.description %>
+</p>
+
+<p>
+  <b>Air temp:</b>
+  <%= @journal_entry.air_temp %>
+</p>
+
+<p>
+  <b>Water temp:</b>
+  <%= @journal_entry.water_temp %>
+</p>
+
+<p>
+  <b>Conditions:</b>
+  <%= @journal_entry.conditions %>
+</p>
+
+<p>
+  <b>Species sought:</b>
+  <%= @journal_entry.species_sought %>
+</p>
+
+<p>
+  <b>Species caught:</b>
+  <%= @journal_entry.species_caught %>
+</p>
+
+<p>
+  <b>Fly pattern:</b>
+  <%= @journal_entry.fly_pattern %>
+</p>
+
+<p>
+  <b>Pressure:</b>
+  <%= @journal_entry.pressure %>
+</p>
+
+<p>
+  <b>Rating:</b>
+  <%= @journal_entry.rating %>
+</p>
+
+
+<%= link_to 'Edit', edit_journal_entry_path(@journal_entry) %> |
+<%= link_to 'Back', journal_entries_path %>

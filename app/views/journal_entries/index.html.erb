@@ -1,0 +1,45 @@
+<h1>My Fly-fishing Journal</h1>
+
+<table>
+  <tr>
+    <th>Date</th>
+    <th>Loc city</th>
+    <th>Loc state</th>
+    <th>Description</th>
+    <th>Air temp</th>
+    <th>Water temp</th>
+    <th>Conditions</th>
+    <th>Species sought</th>
+    <th>Species caught</th>
+    <th>Fly pattern</th>
+    <th>Pressure</th>
+    <th>Rating</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @journal_entries.each do |journal_entry| %>
+  <tr>
+    <td><%= journal_entry.date %></td>
+    <td><%= journal_entry.loc_city %></td>
+    <td><%= journal_entry.loc_state %></td>
+    <td><%= journal_entry.description %></td>
+    <td><%= journal_entry.air_temp %></td>
+    <td><%= journal_entry.water_temp %></td>
+    <td><%= journal_entry.conditions %></td>
+    <td><%= journal_entry.species_sought %></td>
+    <td><%= journal_entry.species_caught %></td>
+    <td><%= journal_entry.fly_pattern %></td>
+    <td><%= journal_entry.pressure %></td>
+    <td><%= journal_entry.rating %></td>
+    <td><%= link_to 'Show', journal_entry %></td>
+    <td><%= link_to 'Edit', edit_journal_entry_path(journal_entry) %></td>
+    <td><%= link_to 'Destroy', journal_entry, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Journal entry', new_journal_entry_path %>
