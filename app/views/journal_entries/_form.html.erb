@@ -1,4 +1,4 @@
-<%= form_for(@journal_entry) do |f| %>
+<%= simple_form_for(@journal_entry, :html => {:class => 'form-vertical'}) do |f| %>
   <% if @journal_entry.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(@journal_entry.errors.count, "error") %> prohibited this journal_entry from being saved:</h2>
@@ -12,7 +12,7 @@
   <% end %>
 
   <div class="field">
-    Date:  <%= f.date_select :date %>
+    Date:  <%= f.input :date %>
   </div>
   <div class="field">
     City or Town: <%= f.text_field :loc_city %>

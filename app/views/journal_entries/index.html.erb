@@ -1,18 +1,14 @@
 <h1>My Fly-fishing Journal</h1>
 
-<table>
+<table width="960">
   <tr>
     <th>Date</th>
-    <th>Loc city</th>
-    <th>Loc state</th>
-    <th>Description</th>
-    <th>Air temp</th>
-    <th>Water temp</th>
+    <th>City</th>
+    <th>State</th>
+    <th>Air </br>temp</th>
+    <th>Water </br>temp</th>
     <th>Conditions</th>
-    <th>Species sought</th>
-    <th>Species caught</th>
-    <th>Fly pattern</th>
-    <th>Pressure</th>
+    <th>Species </br>caught</th>
     <th>Rating</th>
     <th></th>
     <th></th>
@@ -21,21 +17,17 @@
 
 <% @journal_entries.each do |journal_entry| %>
   <tr>
-    <td><%= journal_entry.date %></td>
-    <td><%= journal_entry.loc_city %></td>
-    <td><%= journal_entry.loc_state %></td>
-    <td><%= journal_entry.description %></td>
-    <td><%= journal_entry.air_temp %></td>
-    <td><%= journal_entry.water_temp %></td>
-    <td><%= journal_entry.conditions %></td>
-    <td><%= journal_entry.species_sought %></td>
-    <td><%= journal_entry.species_caught %></td>
-    <td><%= journal_entry.fly_pattern %></td>
-    <td><%= journal_entry.pressure %></td>
-    <td><%= journal_entry.rating %></td>
-    <td><%= link_to 'Show', journal_entry %></td>
-    <td><%= link_to 'Edit', edit_journal_entry_path(journal_entry) %></td>
-    <td><%= link_to 'Destroy', journal_entry, confirm: 'Are you sure?', method: :delete %></td>
+    <td width="12%"><center><%= journal_entry.date %></center></td>
+    <td width="12%"><center><%= journal_entry.loc_city %></center></td>
+    <td><center><%= journal_entry.loc_state %></center></td>
+    <td><center><%= journal_entry.air_temp %></center></td>
+    <td><center><%= journal_entry.water_temp %></center></td>
+    <td><center><%= journal_entry.conditions %></center></td>
+    <td><center><%= journal_entry.species_caught %></center></td>
+    <td><center><%= journal_entry.rating %></center></td>
+    <td><%= link_to 'Show', journal_entry, class: "btn btn-mini" %></td>
+    <td><%= link_to 'Edit', edit_journal_entry_path(journal_entry), class: "btn btn-mini" %></td>
+    <td><%= link_to 'Destroy', journal_entry, class: "btn btn-mini btn-danger", confirm: 'Are you sure?', method: :delete %></td>
   </tr>
 <% end %>
 </table>
