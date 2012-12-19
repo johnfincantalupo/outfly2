@@ -2,7 +2,10 @@ class JournalEntriesController < ApplicationController
   # GET /journal_entries
   # GET /journal_entries.json
   def index
+
     @journal_entries = JournalEntry.all
+    @user = current_user
+
 
     respond_to do |format|
       format.html # index.html.erb

@@ -15,22 +15,23 @@
     <th></th>
   </tr>
 
-
-<% @journal_entries.each do |journal_entry| %>
-  <tr>
-    <td width="12%"><center><%= journal_entry.date %></center></td>
-    <td width="10%"><center><%= journal_entry.loc_city %></center></td>
-    <td width="8%"><center><%= journal_entry.loc_state %></center></td>
-    <td><center><%= journal_entry.air_temp %></center></td>
-    <td><center><%= journal_entry.water_temp %></center></td>
-    <td><center><%= journal_entry.conditions %></center></td>
-    <td><center><%= journal_entry.species_caught %></center></td>
-    <td><center><%= journal_entry.rating %></center></td>
-    <td><%= link_to 'Show', journal_entry, class: "btn btn-mini" %></td>
-    <td><%= link_to 'Edit', edit_journal_entry_path(journal_entry), class: "btn btn-mini" %></td>
-    <td><%= link_to 'Destroy', journal_entry, class: "btn btn-mini btn-danger", confirm: 'Are you sure?', method: :delete %></td>
-  </tr>
-<% end %>
+  
+    <% @journal_entries.each do |journal_entry| %>
+        <tr>
+         <td width="12%"><center><%= journal_entry.date %></center></td>
+         <td width="10%"><center><%= journal_entry.loc_city %></center></td>
+         <td width="8%"><center><%= journal_entry.loc_state %></center></td>
+         <td><center><%= journal_entry.air_temp %></center></td>
+         <td><center><%= journal_entry.water_temp %></center></td>
+         <td><center><%= journal_entry.conditions %></center></td>
+         <td><center><%= journal_entry.species_caught %></center></td>
+         <td><center><%= journal_entry.rating %></center></td>
+         <td><%= link_to 'Show', journal_entry, class: "btn btn-mini" %></td>
+         <td><%= link_to 'Edit', edit_journal_entry_path(journal_entry), class: "btn btn-mini" %></td>
+         <td><%= link_to 'Destroy', journal_entry, class: "btn btn-mini btn-danger", confirm: 'Are you sure?', method: :delete %></td>
+        </tr>
+    <% end %>
+    
 </table>
 
 <br />
