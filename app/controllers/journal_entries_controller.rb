@@ -4,7 +4,7 @@ class JournalEntriesController < ApplicationController
   def index
 
     @journal_entries = JournalEntry.all
-    @user = current_user
+    @user = "current_user"
 
 
     respond_to do |format|
