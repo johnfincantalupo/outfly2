@@ -1,8 +1,8 @@
 Outfly2::Application.routes.draw do
 
-  resources :journal_entries
-
-  devise_for :users
+  devise_for :users do
+      resources :entries
+  end
 
   root :to => 'static_pages#home'
 

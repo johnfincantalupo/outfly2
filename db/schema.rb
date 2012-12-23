@@ -11,25 +11,27 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20121219153347) do
+ActiveRecord::Schema.define(:version => 20121223015531) do
 
-  create_table "journal_entries", :force => true do |t|
+  create_table "entries", :force => true do |t|
     t.date     "date"
-    t.string   "loc_city"
-    t.string   "loc_state"
+    t.string   "city"
+    t.string   "state"
     t.text     "description"
-    t.integer  "air_temp"
-    t.integer  "water_temp"
+    t.integer  "airtemp"
+    t.integer  "watertemp"
     t.string   "conditions"
-    t.string   "species_sought"
-    t.string   "species_caught"
-    t.string   "fly_pattern"
+    t.string   "speciessought"
+    t.string   "speciescaught"
+    t.string   "flypattern"
     t.string   "pressure"
     t.integer  "rating"
-    t.datetime "created_at",     :null => false
-    t.datetime "updated_at",     :null => false
     t.integer  "user_id"
+    t.datetime "created_at",    :null => false
+    t.datetime "updated_at",    :null => false
   end
+
+  add_index "entries", ["user_id"], :name => "index_entries_on_user_id"
 
   create_table "users", :force => true do |t|
     t.string   "email",                  :default => "", :null => false

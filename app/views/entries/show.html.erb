@@ -1,0 +1,70 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Date:</b>
+  <%= @entry.date %>
+</p>
+
+<p>
+  <b>City:</b>
+  <%= @entry.city %>
+</p>
+
+<p>
+  <b>State:</b>
+  <%= @entry.state %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @entry.description %>
+</p>
+
+<p>
+  <b>Airtemp:</b>
+  <%= @entry.airtemp %>
+</p>
+
+<p>
+  <b>Watertemp:</b>
+  <%= @entry.watertemp %>
+</p>
+
+<p>
+  <b>Conditions:</b>
+  <%= @entry.conditions %>
+</p>
+
+<p>
+  <b>Speciessought:</b>
+  <%= @entry.speciessought %>
+</p>
+
+<p>
+  <b>Speciescaught:</b>
+  <%= @entry.speciescaught %>
+</p>
+
+<p>
+  <b>Flypattern:</b>
+  <%= @entry.flypattern %>
+</p>
+
+<p>
+  <b>Pressure:</b>
+  <%= @entry.pressure %>
+</p>
+
+<p>
+  <b>Rating:</b>
+  <%= @entry.rating %>
+</p>
+
+<p>
+  <b>User:</b>
+  <%= @entry.user %>
+</p>
+
+
+<%= link_to 'Edit', edit_entry_path(@entry) %> |
+<%= link_to 'Back', entries_path %>

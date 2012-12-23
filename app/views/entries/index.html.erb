@@ -1,0 +1,38 @@
+<h1>My Fly-fishing Journal</h1>
+
+<table width="960">
+<tr>
+<th>Date</th>
+<th>City</th>
+<th>State</th>
+<th>Air </br>temp</th>
+<th>Water </br>temp</th>
+<th>Conditions</th>
+<th>Species </br>caught</th>
+<th>Rating</th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+
+<% @entries.each do |entry| %>
+<tr>
+<td width="12%"><center><%= entry.date %></center></td>
+<td width="10%"><center><%= entry.city %></center></td>
+<td width="8%"><center><%= entry.state %></center></td>
+<td><center><%= entry.airtemp %></center></td>
+<td><center><%= entry.watertemp %></center></td>
+<td><center><%= entry.conditions %></center></td>
+<td><center><%= entry.speciescaught %></center></td>
+<td><center><%= entry.rating %></center></td>
+<td><%= link_to 'Show', entry, class: "btn btn-mini" %></td>
+<td><%= link_to 'Edit', edit_entry_path(entry), class: "btn btn-mini" %></td>
+<td><%= link_to 'Destroy', entry, class: "btn btn-mini btn-danger", confirm: 'Are you sure?', method: :delete %></td>
+</tr>
+<% end %>
+
+</table>
+
+<br />
+
+<%= link_to 'New Entry', new_entry_path %>
