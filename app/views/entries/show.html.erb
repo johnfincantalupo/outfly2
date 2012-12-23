@@ -21,12 +21,12 @@
 </p>
 
 <p>
-  <b>Airtemp:</b>
+  <b>Air Temp:</b>
   <%= @entry.airtemp %>
 </p>
 
 <p>
-  <b>Watertemp:</b>
+  <b>Water Temp:</b>
   <%= @entry.watertemp %>
 </p>
 
@@ -36,17 +36,17 @@
 </p>
 
 <p>
-  <b>Speciessought:</b>
+  <b>Species Sought:</b>
   <%= @entry.speciessought %>
 </p>
 
 <p>
-  <b>Speciescaught:</b>
+  <b>Species Caught:</b>
   <%= @entry.speciescaught %>
 </p>
 
 <p>
-  <b>Flypattern:</b>
+  <b>Fly Pattern:</b>
   <%= @entry.flypattern %>
 </p>
 
@@ -59,12 +59,6 @@
   <b>Rating:</b>
   <%= @entry.rating %>
 </p>
-
-<p>
-  <b>User:</b>
-  <%= @entry.user %>
-</p>
-
 
 <%= link_to 'Edit', edit_entry_path(@entry) %> |
 <%= link_to 'Back', entries_path %>
