@@ -3,10 +3,8 @@ class JournalEntriesController < ApplicationController
   # GET /journal_entries.json
   def index
 
-    @journal_entries = JournalEntry.all
-    @user = "current_user"
-
-
+    @journal_entries = current_user.journal_entries
+   
     respond_to do |format|
       format.html # index.html.erb
       format.json { render json: @journal_entries }
@@ -43,7 +41,9 @@ class JournalEntriesController < ApplicationController
   # POST /journal_entries
   # POST /journal_entries.json
   def create
+    
     @journal_entry = JournalEntry.new(params[:journal_entry])
+    @journal_entry.user_id = current_user.id
 
     respond_to do |format|
       if @journal_entry.save
