@@ -8,7 +8,7 @@
     <%= f.input :description %>
     <%= f.input :airtemp, :label => "Air Temp" %>
     <%= f.input :watertemp, :label => "Water Temp" %>
-    <%= f.input :conditions %>
+    <%= f.input :conditions, :collection => ["Sunny", "Partly Sunny", "Partly Cloudy", "Cloudy", "Rain", "Snow"] %>
     <%= f.input :speciessought, :label => "Species Sought" %>
     <%= f.input :speciescaught, :label => "Species Caught" %>
     <%= f.input :flypattern, :label => "Fly Pattern" %>
