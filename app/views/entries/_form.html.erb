@@ -12,7 +12,7 @@
     <%= f.input :speciessought, :label => "Species Sought" %>
     <%= f.input :speciescaught, :label => "Species Caught" %>
     <%= f.input :flypattern, :label => "Fly Pattern" %>
-    <%= f.input :pressure %>
+    <%= f.input :pressure, :label => "Fishing Pressure", :collection => ["Light", "Medium", "Heavy"] %>
     <%= f.input :rating, :collection => 1..5 %>
     
   </div>
