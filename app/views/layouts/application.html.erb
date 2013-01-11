@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>ShoutFly the Social Fly Fishing App</title>
+  <title>ShoutFly the Social Fly-Fishing App</title>
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
@@ -22,11 +22,13 @@
   <div class="navbar navbar-inverse">
     <div class="navbar-inner">
       <div class="container-fluid">
+        <!-- <a class="brand" href="#"><img src="/assets/tiny_logo_test1.png" /></a> -->
         <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </a>
+
         <%= link_to "ShoutFly", root_path, class: "brand" %>
         <div class="nav-collapse">
           <ul class="nav">
@@ -52,12 +54,58 @@
   <div class="container">
 
     <% flash.each do |key, value| %>
-    <%= content_tag(:div, value, class: "alert alert-#{key}") %>
+    <%= contePnt_tag(:div, value, class: "alert alert-#{key}") %>
     <% end %>
    
     <%= yield %>
 
   </div><!-- container -->
+
+<footer>
+  <div class="container">
+    <div class="row">
+
+      <div class="span4">
+       
+       <h4>ShoutFly</h4>
+
+          <p>
+            <i class="icon-map-marker icon-white"></i> 30 Park Avenue
+          </p>
+          <p> 
+            <i class="icon-map-marker icon-white"></i> New York, NY 00123, USA
+          </p>  
+          <p> 
+            <i class="icon-bell icon-white"></i> Phone: (123) 456-7890
+          </p>
+          <p> 
+            <i class="icon-inbox icon-white"></i> Fax: +08 (123) 456-7890
+          </p>
+          <p>
+            <i class="icon-envelope icon-white"></i> Email: contact@companyname.com
+          </p>
+          <p>
+            <i class="icon-home icon-white"></i> Web: companyname.com
+          </p>
+        
+      </div>
+      <div class="span4">
+        <h4>Latest Tweets</h4>
+          
+          <ul id="twitter">
+            
+          </ul>
+
+          <div class="clear"></div>
+      </div>
+      <div class="span4">
+        
+      </div>
+      
+    </div><!-- end row -->
+  </div><!-- end container -->  
+
+</footer>
 
 </body>
 
